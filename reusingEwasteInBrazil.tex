@@ -1,0 +1,178 @@
+\documentclass[sigconf, authorversion, nonacm]{acmart}
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+% \setcopyright{acmlicensed}
+% \copyrightyear{2018}
+% \acmYear{2018}
+% \acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[CTB '24]{Computer On The Beach}{April 10 2024}{Balneário Camboriú - SC}
+
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{The Utility of Reusing E-waste on Computer Engineering Classes in Brazil}
+\subtitle{A Path for Environmentally Conscious Engineers}
+
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Julio Augusto de Castilhos Borges}
+\email{julioacb10@gmail.com}
+\affiliation{%
+  \institution{Universidade Estadual do Rio Grande do Sul}
+  \streetaddress{Santa Maria, 2300}
+  \city{Guaíba}
+  \state{Rio Grande Do Sul}
+  \country{BR}
+  \postcode{92500-000}
+}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\author}
+
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  Electronic waste (e-waste) has become a global environmental challenge, and Brazil, as one of the world's largest producers of e-waste, faces significant challenges in managing this waste stream effectively. As such, the integration of e-waste reuse into computer engineering education in Brazil could be an effective approach to address the e-waste problem.
+  By incorporating e-waste disassembly, component recovery, and repurposing activities into the curriculum, computer engineering students can gain hands-on experience with e-waste management and develop practical skills in sustainable engineering. This approach not only contributes to reducing the environmental impact of e-waste but also fosters a sense of environmental consciousness and social responsibility among future engineers.
+  However, some potential benefits, difficulties, and considerations must be addressed before implementing those kinds of activities in classes. Namely: the collection of those waste resources; the safety risks involved with some of the components and materials; the upkeep of those materials, and others.
+\end{abstract}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Education, Computer Engineering, Brazil, Reuse, Envoronment, Reduce. Electronic Waste, E-waste, Sustainable Engineering}
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010583.10010600.10010602.10010603</concept_id>
+       <concept_desc>Hardware~Input / output circuits</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003456.10003457.10003527.10003531.10003534</concept_id>
+       <concept_desc>Social and professional topics~Computer engineering education</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Hardware~Input / output circuits}
+\ccsdesc[500]{Social and professional topics~Computer engineering education}
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+  The rapid advancement of technology has led to an exponential increase in electronic waste (e-waste) in Brazil \cite{GWM01}, posing significant environmental challenges \cite{MSSOChallenges}. Brazil is the world’s 5th largest producer of e-waste and out of the 16 tonnes of e-recyclable material collected and only 3\% of that has been recycled according to Green Electron (2021)\cite{GEREB}. However, the currently implemented solutions are not being as effective as they could be \cite{DiasBrazil} and thus there is a growing need for innovative approaches to reduce the environmental impact of those electronic devices and promote sustainable practices. Alongside that, the investment in free and quality education hasn't kept up with the cost, meaning worse conditions for students, teachers and workers. Furthermore, students could decide to try fixing those devices in elective classes as a way to raise money to further improve their learning environment. However, implementing e-waste reuse in computer engineering education can be challenging. Afterall, ensuring the safety and health of students and teachers is a concern. Despite that challenge, e-waste reuse alongside computer engineering classes could be promising way to promote sustainable practices in the field of engineering and help shape the next generations to be more environmentally conscious in Brazil. UFRGS, alongside other universities, has a project aligned to this paper’s goals. The so-called CRC’s (Centro de Recondicionamento de Computadores, in english: Computer Reconditioning Centers) operate as a place for students to learn about how computers work, repair them and then donate those repaired machines for those in need. As such, the integration of e-waste reuse into computer engineering education could be a solution for current and future generations of Brazilians.
+
+\section{The E-Waste Problem In Brazil}
+  In 2021, 1200 metric tonnes of e-waste was collected according to the brazilian government \cite[Ministério do Meio Ambiente, 2022]{Gov1}, but there isn’t much information about what is done with it. One of those collection centers was contacted for any information they could contribute to this research, however they never replied. Regardless, Brazil's National Policy on Solid Waste \cite{Gov2} (PNRS, in portuguese: Política Nacional de Resíduos Sólidos), implemented in 2010, establishes guidelines for reverse logistics, disposal, and recycling of solid waste, including electronic waste. This legislation is considered a milestone, introducing shared responsibility for waste management from manufacturing to final disposal. However, eleven years later, the law remains widely disregarded across the country. Brazil's vast size and economic disparities contribute to the persistence of illegal WEEE dumping and importation. Despite being a signatory to the Basel Convention \cite{Basel}, Brazil's public policies struggle to address these issues, particularly in less affluent regions. In 2021, Brazil approved a sectoral agreement for implementing reverse logistics for electronic waste. However, the effectiveness of this agreement remains unclear due to the lack of sufficient data. Other studies on Brazilian consumer behavior towards e-waste generation reveal a high level of awareness regarding the importance of proper collection and recycling. A lack of proper collection infrastructure and inadequate information on responsible e-waste disposal. Echegaray and Hansstein (2017) and Neto et al. (2022) identified subjective perceptions of obsolescence as a significant factor driving e-waste generation, particularly for mobile phones. Abbondanza and Souza (2019) found that the real obsolescence rate of EEE in Brazil may be higher than previously estimated, contributing to a shorter lifespan for electronic devices. The continuous advancement of technology and changing consumer behavior, driven by the global online market, further strain collection and recycling systems. This necessitates improvements in reverse logistics infrastructure to accommodate increasing e-waste volumes. On the positive side, Brazil's reuse and refurbishment markets are reportedly thriving, potentially extending the lifespan of electronic devices and reducing e-waste generation.  A unique aspect of Brazil's e-waste management is the involvement of waste pickers. These individuals collect and sell valuable recyclables, such as aluminum and copper, to support themselves, forming an informal recycling network. However, these informal practices often result in environmental pollution and injuries due to the lack of adequate regulations and enforcement.
+
+\section{Conceivable Problems With This Approach}
+It must be mentioned that some devices contain potentially dangerous materials and components, such as powerful capactitors that, if charged, could be a shock hazard. Alongside that, most electronic devices contain a series of chemicals that cause health concerns, as Pallone \cite{SPREE} and Capuccio et. al \cite{Cappuccin} mention. As such, proper safety processes must me implemented so as to ensure the wellbeing of everyone involved. The following table exemplifies the most common substances and their harm to the human body.
+\begin{table}[hbt!]
+  \caption{Harmful Metals Contained in E-Waste}
+  \label{tab:freq}
+  \begin{tabular}{ccl}
+    \toprule
+    Metal&Device&Major Consequences\\
+    \midrule
+    Lead&PCBs$^1$, CRTs$^2$, batteries&Brain damage\\
+    Mercury&PCBs, CCFLs$^3$, Thermostats&Brain damage\\
+    Cadmium&PCBs, CRTs&Lung damage\\
+    Chromium&Floppy Disks, Data Tapes&Carcinogenic\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+$^1$ Printed Circuit Boards, $^2$ Cathode Ray Tubes, $^3$ Cold Cathode Fluorescent Lamps\\
+
+Of course, CCFLs are probably not going to very be common in an educational envoronment, but Not only that, but
+
+
+\section{Possible Classes That Could Be Benefited}
+  Generally, all classes that could ever have practical experiments regarding electronic components, but especially those that plan on teaching about computer hardware. Topics such as: Memory, Data Bus, Interrupts, CPU Architecture, Low Level Programming and many more could be further explored by showing students real world applications and having them interact with those devices. As such, I predict an increase in student learning, as most of them will me more interested in classes if the trend \cite{someone} found and with the features presented earlier.
+
+\section{Future Expectations}
+  With the proper following of this paper's ideals and objectives, along with other improvements, Brazil's environmental education could see great developments. Not only that, but the methods explored in this paper could prove themselves useful in the future of computer engineers, which, with the awareness of environmentally friendly ways to improve the world, would result in a better world for all humans.
+
+De onde vem as ideias do autor (que outras fontes)?
+O que foi obtido como resultado desse trabalho?
+Como esse trabalho se relaciona com outros na mesma área?
+Quais seriam os próximos passos para a continuação desse trabalho?
+Que outras ideias poderiam ser aproveitadas nesse trabalho?
+
+The current level of public education in Brazil is okay, though the
+
+\begin{acks}
+Gabriel ‘Lauro’ Camargo was a great inspiration in making this research paper, even though it’s not as great as if he had made it. Alongside that, I would love to thank Débora da Silva Motta Mattos for teaching me everything I know about how to write a paper and how to always endure and survive. Letícia ‘Sensei’ Guimarães was also a great mentor, she helped inspire this paper’s main research topic. Without them, this paper would never have existed and for that I am forever indebted.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reEwasteBra}
+
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Research Methods}
+
+To write this paper, reliable sources of information were needed. To gather them, an extense literature review was conducted. Most articles didn’t exactly cover this paper’s objective. However, some were relevant to this research, namely; an extensive usage of Brazil’s official federal website as well as of scienfic research papers. By following upon other authors’ findngs on topics related to this one and currently running projects covering similar goals as this paper, enough sources could be gathered to complete this research. Additionally, an extensive use of UFRGS's CRC webpages and Brazil's Governmental posts were used in the making of this paper.
+
+\end{document}
+\endinput
